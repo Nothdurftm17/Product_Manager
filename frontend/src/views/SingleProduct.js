@@ -39,7 +39,7 @@ const SingleProduct = (props) => {
             <h2>{product.description}</h2>
 
 
-            <Link className="btn btn-info btn-lg m-3" to={`/products/${_id}/edit`}>Edit</Link>
+            <Link className="btn btn-info btn-lg m-3" to={`/products/update/${_id}`}>Edit</Link>
             <button onClick={onDeleteHandler} className="btn btn-info btn-lg m-3">Delete</button>
             <Link className="btn btn-info btn-lg m-3" to={`/`}>Back</Link>
         </div>

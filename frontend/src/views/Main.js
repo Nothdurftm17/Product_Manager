@@ -50,7 +50,7 @@ const Main = (props) => {
                                 <td><Link to={`/products/${item._id}`}>{item.title}</Link></td>
                                 <td>$ {item.price}</td>
                                 <td>{item.description}</td>
-                                <td className="d-flex m-2"><button className="btn btn-primary btn-lg"> Edit</button> <button onClick={()=>onDeleteHandler(item._id, i)} className="btn btn-primary btn-lg mx-2">Delete</button></td>
+                                <td className="d-flex m-2"><Link to={`/products/update/${item._id}`} className="btn btn-primary btn-lg" > Edit</Link> <button onClick={()=>onDeleteHandler(item._id, i)} className="btn btn-primary btn-lg mx-2">Delete</button></td>
                                 </tr>
                         })
                     }

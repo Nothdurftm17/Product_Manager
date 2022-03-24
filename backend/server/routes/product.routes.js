@@ -12,6 +12,6 @@ module.exports = app => {
 
     app.delete("/api/products/:_id", ProductController.deleteOne);
 
-    app.patch("/api/products/:_id", ProductController.updateOne);
+    app.patch("/api/products/update/:_id", ProductController.updateOne);
 
 }
