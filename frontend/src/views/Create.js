@@ -56,7 +56,7 @@ const Create = (props) => {
                 </div>
                 <input type="submit" className="btn btn-success btn-lg my-3"/>
             </form>
-            <Link to="/">Home</Link>
+            <Link to="/" className="btn btn-secondary">Home</Link>
         </div>
     )
 }
